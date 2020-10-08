@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main id="container">
+      <header>
+        <h1 id="title">FIFA Survey Form</h1>
+        <p id="description">
+          FIFA is a series of association football simulation video games
+          developed and released annually by Electronic Arts under the EA Sports
+          label. The Guardian called the series "the slickest, most polished and
+          by far the most popular football game around". As of 2011, the FIFA
+          franchise has been localised into 18 languages and available in 51
+          countries. Listed in Guinness World Records as the best-selling sports
+          video game franchise in the world, by 2019, the FIFA series had sold
+          over 282.4 million copies. It is also one of the best-selling video
+          game franchises.
+        </p>
+      </header>
+      <!--Form Start-->
+      <form id="survey-form" action="">
+        <!--Name Component: Start-->
+        <label id="name-label" for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Enter your Name"
+        />
+        <!--End-->
+        <br />
+        <!--Email Component: Start-->
+        <label id="email-label" for="email"> Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email" required
+        />
+        <!--End-->
+        <br />
+        <!--Number Component: Start-->
+        <label id="number-label" for="number"> Age: </label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="1"
+          max="99"
+          required
+          placeholder="Enter your Age"
+        />
+        <!--End-->
+        <br />
+        <!--Dropdown Component: Start-->
+
+        <label for="dropdown"> Select your platform:</label>
+        <select name="platform" id="dropdown">
+          <option value="PlayStation 4">PlayStation 4</option>
+          <option value="XBOX One">XBOX One</option>
+          <option value="PlayStation 3">PlayStation 3</option>
+          <option value="XBOX 360">XBOX 360</option>
+          <option value="Play Station 2">PlayStation 2</option>
+          <option value="PC">PC</option>
+          <option value="Wii">Wii</option>
+          <option value="Mobile">Mobile</option>
+        </select>
+
+        <!--End-->
+        <br />
+        <!--Radio_Button Component: Start-->
+        <fieldset id="feat">
+          <legend>Favourite feature:</legend>
+          <label for="FUT">
+            <input type="radio" value="FUT" id="FUT" name="features" /> Ultimate
+            Team
+          </label>
+          <br />
+          <label for="CM-P">
+            <input
+              type="radio"
+              value="Career: Player"
+              id="CM-P"
+              name="features"
+            />
+            Career Mode (Player)
+          </label>
+          <br />
+          <label for="CM-M">
+            <input
+              type="radio"
+              value="Career: Manager"
+              id="CM-M"
+              name="features"
+            />
+            Career Mode (Manager)
+          </label>
+          <br />
+          <label for="CL">
+            <input type="radio" value="Cups/League" name="features" id="CL" />
+            Cups/Leagues
+          </label>
+          <br />
+          <label for="UCL">
+            <input
+              type="radio"
+              value="Champions League"
+              name="features"
+              id="UCL"
+            />
+            Uefa Champions League
+          </label>
+          <br />
+          <label for="SM">
+            <input type="radio" value="Story Mode" id="SM" name="features" />
+            Story Mode
+          </label>
+          <br />
+        </fieldset>
+        <!--End-->
+        <br />
+        <!--Version Component: Start-->
+        <fieldset id="versions">
+          <legend>Versions Played:</legend>
+          <input type="checkbox" name="ver" id="f10" value="f10" />
+          <label for="f10"> FIFA 10 and or earlier</label>
+
+          <input type="checkbox" name="ver" id="f11" value="f11" />
+          <label for="f11"> FIFA 11</label>
+
+          <input type="checkbox" name="ver" id="f12" value="f12" />
+          <label for="f12"> FIFA 12</label>
+
+          <input type="checkbox" name="ver" id="f13" value="f13" />
+          <label for="f13"> FIFA 13</label>
+
+          <input type="checkbox" name="ver" id="f14" value="f14" />
+          <label for="f14"> FIFA 14</label>
+
+          <input type="checkbox" name="ver" id="f15" value="f15" />
+          <label for="f15"> FIFA 15</label>
+
+          <input type="checkbox" name="ver" id="f16" value="f16" />
+          <label for="f16"> FIFA 16</label>
+
+          <input type="checkbox" name="ver" id="f17" value="f17" />
+          <label for="f17"> FIFA 17</label>
+
+          <input type="checkbox" name="ver" id="f18" value="f18" />
+          <label for="f18"> FIFA 18</label>
+
+          <input type="checkbox" name="ver" id="f19" value="f19" />
+          <label for="f19"> FIFA 19</label>
+
+          <input type="checkbox" name="ver" id="f20" value="f20" />
+          <label for="f20"> FIFA 20</label>
+
+          <input type="checkbox" name="ver" id="f21" value="f21" />
+          <label for="f21"> FIFA 21</label>
+        </fieldset>
+        <!--End-->
+        <br />
+        <!--Text_Area Component: Start-->
+        <label for="comments">Comments: </label>
+
+        <textarea
+          maxlength="255"
+          id="comments"
+          name="comments"
+          placeholder="How was your experience?"
+        ></textarea>
+        <br />
+        <!--End-->
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

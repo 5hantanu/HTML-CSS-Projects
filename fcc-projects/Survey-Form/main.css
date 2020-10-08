@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  background-color: #a0ced9;
+  background-color: #204fa0;
+  color: #04080f;
+}
+
+#title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: monospace;
+  margin: 10px;
+}
+#description {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 10px;
+  padding: 10px;
+  line-height: 1.6em;
+  font-weight: 600;
+}
+#container {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+#survey-form {
+  padding: 30px;
+  font-family: monospace;
+  border: 2px solid black;
+  background-color: #ee2e31;
+}
+
+#survey-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#name,
+#email,
+#number,
+#feat,
+#dropdown,
+#comments {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: justify;
+}
+#versions label {
+  margin: 0px;
+  display: inline;
+  padding: 0px;
+}
+
+#versions {
+  margin: 0px;
+  padding: 10px;
+  display: inline-block;
+  height: auto;
+}
+legend {
+  text-align: center;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#submit {
+  margin-top: 20px;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+textarea {
+  max-width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  resize: none;
+}
+
+input {
+  font-family: sans-serif;
+}

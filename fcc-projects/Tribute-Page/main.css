@@ -1,0 +1,73 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  animation-name: background;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background {
+  0% {
+    background-color: #004d98;
+  }
+
+  25% {
+    background-color: #a50044;
+  }
+
+  50% {
+    background-color: #004d98;
+  }
+  75% {
+    background-color: #a50044;
+  }
+  100% {
+    background-color: #004d98;
+  }
+}
+
+#title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.6em;
+  text-align: center;
+  font-weight: 800;
+  margin: 10px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+#img-div {
+  border: 2px solid black;
+  background: linear-gradient(45deg, #004d98, #a50044);
+}
+
+#image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+
+#tribute-info {
+  text-align: justify;
+
+  width: 90%;
+  margin: 0 auto;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.5em;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#tribute-link {
+  color: black;
+}

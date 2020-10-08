@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- Horizontal navbar.Start-->
+    <nav id="navbar">
+      <header id="title">R Documentation</header>
+      <div id="flex-navbar">
+        <ul>
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#basic_syntax">Basic Syntax</a></li>
+          <li><a class="nav-link" href="#data_types">Data Types</a></li>
+          <li><a class="nav-link" href="#variables">Variables</a></li>
+          <li><a class="nav-link" href="#operators">Operators</a></li>
+          <li>
+            <a class="nav-link" href="#decision_making">Decision Making</a>
+          </li>
+          <li><a class="nav-link" href="#loops">Loops</a></li>
+          <li><a class="nav-link" href="#functions">Functions</a></li>
+          <!--<li><a class="nav-link" href="#strings">Strings</a></li>
+        <li><a class="nav-link" href="#vectors">Vectors</a></li>
+        <li><a class="nav-link" href="#lists">Lists</a></li>
+        <li><a class="nav-link" href="#matrices"> Matrices</a></li>
+        <li><a class="nav-link" href="#arrays"> Arrays</a></li>-->
+          <li><a class="nav-link" href="#reference"> Reference</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Horizontal navbar.End-->
+
+    <!-- Documentation.Start-->
+
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>
+          R is a programming language and software environment for statistical
+          analysis, graphics representation and reporting. R was created by Ross
+          Ihaka and Robert Gentleman at the University of Auckland, New Zealand,
+          and is currently developed by the R Development Core Team.
+        </p>
+        <p>
+          The core of R is an interpreted computer language which allows
+          branching and looping as well as modular programming using functions.
+          R allows integration with the procedures written in the C, C++, .Net,
+          Python or FORTRAN languages for efficiency.
+        </p>
+        <p>
+          R is freely available under the GNU General Public License, and
+          pre-compiled binary versions are provided for various operating
+          systems like Linux, Windows and Mac.
+        </p>
+      </section>
+      <section class="main-section" id="features">
+        <header>Features</header>
+        <p>
+          As stated earlier, R is a programming language and software
+          environment for statistical analysis, graphics representation and
+          reporting. The following are the important features of R −
+        </p>
+        <ul>
+          <li>
+            R is a well-developed, simple and effective programming language
+            which includes conditionals, loops, user defined recursive functions
+            and input and output facilities.
+          </li>
+          <li>R has an effective data handling and storage facility,</li>
+          <li>
+            R provides a suite of operators for calculations on arrays, lists,
+            vectors and matrices.
+          </li>
+          <li>
+            R provides a large, coherent and integrated collection of tools for
+            data analysis.
+          </li>
+          <li>
+            R provides graphical facilities for data analysis and display either
+            directly at the computer or printing at the papers.
+          </li>
+        </ul>
+        <p>
+          As a conclusion, R is world’s most widely used statistics programming
+          language. It's the # 1 choice of data scientists and supported by a
+          vibrant and talented community of contributors. R is taught in
+          universities and deployed in mission critical business applications.
+        </p>
+      </section>
+      <section class="main-section" id="basic_syntax">
+        <header>Basic Syntax</header>
+        <p>
+          As a convention, we will start learning R programming by writing a
+          "Hello, World!" program. Depending on the needs, you can program
+          either at R command prompt or you can use an R script file to write
+          your program. Let's check both one by one.
+        </p>
+        <h3>R Command Prompt</h3>
+        <p>
+          Once you have R environment setup, then it’s easy to start your R
+          command prompt by just typing the following command at your command
+          prompt −
+        </p>
+        <code> $ R </code>
+        <p>
+          This will launch R interpreter and you will get a prompt > where you
+          can start typing your program as follows −
+        </p>
+        <code>
+          <span>>myString <- "Hello, World!"</span>
+          <span>>print ( myString)</span>
+          <span>[1] "Hello, World!" </span>
+        </code>
+        <p>
+          Here first statement defines a string variable myString, where we
+          assign a string "Hello, World!" and then next statement print() is
+          being used to print the value stored in variable myString.
+        </p>
+        <h3>Comments</h3>
+        <p>
+          Comments are like helping text in your R program and they are ignored
+          by the interpreter while executing your actual program. Single comment
+          is written using # in the beginning of the statement as follows −
+        </p>
+        <code class="comments"># My first program in R Programming</code>
+      </section>
+      <section class="main-section" id="data_types">
+        <header>Data Types</header>
+        <p>
+          Generally, while doing programming in any programming language, you
+          need to use various variables to store various information. Variables
+          are nothing but reserved memory locations to store values. This means
+          that, when you create a variable you reserve some space in memory.
+        </p>
+        <p>
+          You may like to store information of various data types like
+          character, wide character, integer, floating point, double floating
+          point, Boolean etc. Based on the data type of a variable, the
+          operating system allocates memory and decides what can be stored in
+          the reserved memory.
+        </p>
+        <p>
+          In contrast to other programming languages like C and java in R, the
+          variables are not declared as some data type. The variables are
+          assigned with R-Objects and the data type of the R-object becomes the
+          data type of the variable. There are many types of R-objects. The
+          frequently used ones are −
+        </p>
+        <ul>
+          <li>Vectors</li>
+          <!-- For the upcoming sections about them, write from data types's section-->
+          <li>Lists</li>
+          <li>Matrices</li>
+          <li>Arrays</li>
+          <li>Factors</li>
+          <li>Data Frames</li>
+        </ul>
+      </section>
+      <section class="main-section" id="variables">
+        <header>Variables</header>
+        <p>
+          A variable provides us with named storage that our programs can
+          manipulate. A variable in R can store an atomic vector, group of
+          atomic vectors or a combination of many R objects. A valid variable
+          name consists of letters, numbers and the dot or underline characters.
+          The variable name starts with a letter or the dot not followed by a
+          number.
+        </p>
+        <h3>Variable Assignment</h3>
+        <p>
+          The variables can be assigned values using leftward, rightward and
+          equal to operator. The values of the variables can be printed using
+          <b>print()</b> or <b>cat()</b> function. The <b>cat()</b> function
+          combines multiple items into a continuous print output.
+        </p>
+        <code>
+          <span class="comments"># Assignment using equal operator.</span>
+          var.1 = c(0,1,2,3)
+          <span class="comments"> # Assignment using leftward operator.</span>
+          var.2 <- c("learn","R")
+          <span class="comments"># Assignment using rightward operator.</span>
+          c(TRUE,1) -> var.3
+          <!--input-->
+          <span>print(var.1)</span>
+          <span>cat ("var.1 is ", var.1 ,"\n")</span>
+          <span>cat ("var.2 is ", var.2 ,"\n")</span>
+          <span>cat ("var.3 is ", var.3 ,"\n")</span>
+        </code>
+        <p>
+          When we execute the above code, it produces the following result −
+        </p>
+        <code>
+          <span>[1] 0 1 2 3</span>
+          <span>var.1 is 0 1 2 3</span>
+          <span>>var.2 is learn R</span>
+          <span>var.3 is 1 1</span>
+        </code>
+      </section>
+      <section class="main-section" id="operators">
+        <header>Operators</header>
+        <p>
+          An operator is a symbol that tells the compiler to perform specific
+          mathematical or logical manipulations. R language is rich in built-in
+          operators and provides following types of operators.
+        </p>
+        <h3>Types of Operators</h3>
+        <p>We have the following types of operators in R programming −</p>
+        <ul>
+          <li>Arithmetic Operators</li>
+          <li>Relational Operators</li>
+          <li>Logical Operators</li>
+          <li>Assignment Operators</li>
+          <li>Miscellaneous Operators</li>
+        </ul>
+      </section>
+      <section class="main-section" id="decision_making">
+        <header>Decision Making</header>
+        <p>
+          Decision making structures require the programmer to specify one or
+          more conditions to be evaluated or tested by the program, along with a
+          statement or statements to be executed if the condition is determined
+          to be <b>true</b>, and optionally, other statements to be executed if
+          the condition is determined to be <b>false</b>.
+        </p>
+        <p>
+          Following is the general form of a typical decision making structure
+          found in most of the programming languages −
+        </p>
+        <img  class="res-img" src="https://www.tutorialspoint.com/r/images/r_decision_making.png" alt="if-else statement" />
+        <p>R provides the following types of decision making statements:</p>
+        <table >
+          <tr >
+            <th>Sr.No.</th>
+            <th>Statement & Description</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>
+              if statement
+              <p>
+                An <b>if</b> statement consists of a Boolean expression followed
+                by one or more statements.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              if...else statement
+              <p>
+                An <b>if</b> statement can be followed by an optional
+                <b>else</b> statement, which executes when the Boolean
+                expression is false.
+              </p>
+            </td>
+          <tr>
+            <td>3</td>
+            <td>switch statement
+              <p>A <b>switch</b> statement allows a variable to be tested for equality against a list of values.</p>
+            </td>
+          </tr>
+          </tr>
+        </table>
+      </section>
+      <section class="main-section" id="loops">
+        <header>Loops</header>
+        <p>There may be a situation when you need to execute a block of code several number of times. In general, statements
+          are
+          executed sequentially. The first statement in a function is executed first, followed by the second, and so on.</p>
+        <p>Programming languages provide various control structures that allow for more complicated execution paths.</p>
+        <p>A loop statement allows us to execute a statement or group of statements multiple times and the following is the
+          general
+          form of a loop statement in most of the programming languages −
+        </p>
+        <img  class="res-img" src="https://www.tutorialspoint.com/r/images/loop_architecture.jpg" alt="loop-explained">
+        <p>R programming language provides the following kinds of loop to handle looping requirements:</p>
+        <table>
+          <tr>
+            <th>
+              Sr.No.
+            </th>
+            <th>Loop Type & Description</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>repeat loop
+              <p>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>while loop
+              <p>Repeats a statement or group of statements while a given condition is true. It tests the condition before
+                executing the
+                loop body.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>for loop
+              <p>Like a while statement, except that it tests the condition at the end of the loop body.</p>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="main-section" id="functions">
+        <header>Functions</header>
+        <p>A function is a set of statements organized together to perform a specific task. R has a large number of in-built
+          functions and the user can create their own functions.</p>
+        <p>In R, a function is an object so the R interpreter is able to pass control to the function, along with arguments
+          that
+          may be necessary for the function to accomplish the actions.</p>
+        <p>The function in turn performs its task and returns control to the interpreter as well as any result which may be
+          stored
+          in other objects.</p>
+        <h3>Function Definition</h3>
+        <p>An R function is created by using the keyword <b>function</b>. The basic syntax of an R function definition is as
+          follows −</p>
+        <code>
+                
+                <span> function_name <- function(arg_1, arg_2, ...) </span>
+                <span>{</span>
+                 <span>  Function body </span>
+              <span>  } </span>
+                
+              </code>
+        <h3>Function Components</h3>
+        <p>The different parts of a function are −</p>
+        <ul>
+          <li><b>Function Name</b> − This is the actual name of the function. It is stored in R environment as an object with
+            this name.</li>
+          <li><b>Arguments</b> − An argument is a placeholder. When a function is invoked, you pass a value to the argument.
+            Arguments are
+            optional; that is, a function may contain no arguments. Also arguments can have default values.</li>
+          <li><b>Function Body</b> − The function body contains a collection of statements that defines what the function
+            does.</li>
+          <li><b>Return Value</b> − The return value of a function is the last expression in the function body to be
+            evaluated.</li>
+        </ul>
+        <p>
+          R has many <b>in-built functions</b> which can be directly called in the program without defining them first. We can
+          also
+          create and use our own functions referred as <b>user defined functions</b>.
+        </p>
+      </section>
+      <section class="main-section ref" id="reference">
+        <header>Reference</header>
+        <p> All the reference is taken from <a href="https://www.tutorialspoint.com/r/index.htm"
+            target="_blank">tutorialspoint</a>.</p>
+      </section>
+<!-- Documentation.End-->
+    </main>
+  </body>
+</html>
