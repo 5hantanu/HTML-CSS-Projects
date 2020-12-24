@@ -1,1 +1,1 @@
-Projects from **_TheOdinProject_** goes here
+Projects from **_TheOdinProject_** go here
